@@ -1,0 +1,22 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Login TTP</title>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+    </head>
+    <body>
+<div class="text-center" style="margin-top: 170px">
+	<h3>Login TTP</h3>
+	<form class="form-group col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 alert alert-info" th:action="@{/admin}" th:object="${adminmodel}" method="post" action="#">
+		<div class="input-group" style="margin-bottom: 10px" >
+			<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+			<input type="text" class="form-control" placeholder="username" th:field="*{username}"/>
+		</div>
+		<div class="input-group" style="margin-bottom: 10px" >
+		<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+			<input type="password" class="form-control" placeholder="password" th:field="*{password}"/>
+		</div>
+		<input type="submit" class="btn btn-primary" value="Login" name="login"/>
+	</form>
+</div>
+</body>
+</html>
