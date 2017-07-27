@@ -6,12 +6,17 @@ buildscript {
 		mavenCentral()
 	}
 	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.4.RELEASE")
 	}
 }
 
+jar {
+	baseName = 'gs-spring-boot'
+	version =  '0.1.0'
+}
+
 apply plugin: 'java'
-apply plugin: 'ec	lipse'
+apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
 version = '0.0.1-SNAPSHOT'
