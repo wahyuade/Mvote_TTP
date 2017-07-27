@@ -11,7 +11,7 @@ buildscript {
 }
 
 jar {
-	baseName = 'gs-spring-boot'
+	baseName = 'Mvote_TTP'
 	version =  '0.1.0'
 }
 
