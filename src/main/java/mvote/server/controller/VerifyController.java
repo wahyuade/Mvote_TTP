@@ -18,7 +18,7 @@ public class VerifyController {
     VerifyModel data_verify;
     @PostMapping("/verify")
     public VerifyModel doVerify(@RequestPart String verify_code){
-
+        System.out.println("terima lokasi verify: "+ System.nanoTime());
         try {
             DptModel data_dpt = dptService.findByVerifikasi(verify_code);
             if(data_dpt!= null){
